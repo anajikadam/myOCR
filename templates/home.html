@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+
+
+
+<div>
+   
+    <form method="POST" action="/checkInstance">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input class="form-control form-control-lg" type="text" name="name" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1"  name="email" placeholder="name@example.com" required>
+        </div>
+        <!-- <input type="submit" value="Submit"> -->
+        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+</div>
+
+{% endblock %}
