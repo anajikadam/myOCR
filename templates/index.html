@@ -2,12 +2,36 @@
 
 
 
-<div>
-    <div > 
-        <h3 style="color: rgb(1, 1, 2); font-weight: bold;">
-            <h2>OCR comming Soon...............</h2><br>
-        </h3>
+<div>     
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose Image File
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div>
+            <h5>
+                <span>File Loaded....!  </span>
+            </h5>
         </div>
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Extract Text...</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+    <br>
+    <h3 id="result" style="color: rgb(1, 1, 2); font-weight: bold;">
+        <span>  </span>
+    </h3>
+        
 </div>
 
 {% endblock %}
