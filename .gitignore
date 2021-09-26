@@ -1,6 +1,5 @@
 Venv/*
-__pycache__/*
 CMDs.txt
 requirements1.txt
-IpData.csv
+IpData1.csv
 
